@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Patient.master.cs" Inherits="My_Clinic_2024_IFS303E.Presentation_Layer.Forms.Patient.Patient" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Style.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="navbar">
+            <h2>Patient Dashboard</h2>
+            <ul>
+                <li><a href="Book.aspx">Book Appointment</a></li>
+                <li><a href="RequestDelivery.aspx">Medical Delivery</a></li>
+                <li><a href="RequestAmbulance.aspx">Request Ambulance</a></li>
+                
+            </ul>
+        </div>
+        <div class="dashboard">
+            <nav class="sidebar">
+                <ul>
+                    <li><a href="Dash.aspx">Dashboard</a></li>
+                    <li><a href="Book.aspx">Book Appointment</a></li>
+                    <li><a href="RequestDelivery.aspx">Request Medical Delivery</a></li>
+                    <li><a href="RequestAmbulance.aspx">Request Ambulance</a></li>
+                    <li><a href="ProfileSettings.aspx">Profile Settings</a></li>
+                    <li><a href="~/Default.aspx">Sign Out</a></li>
+                </ul>
+            </nav>
+            <div class="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
